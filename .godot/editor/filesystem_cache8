@@ -1,0 +1,25 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1719896089
+icon.svg::CompressedTexture2D::754048053382022696::1719430630::1719430660::1::::<><>::
+::res://ENEMIGOS/::1719765288
+alien.gd::GDScript::-1::1719765288::0::1::::<>CharacterBody2D<>::
+alien.tscn::PackedScene::1783107330109734984::1719765288::0::1::::<><>::uid://fml1k1c88bgj::::res://ENEMIGOS/monster001eyes.png<>res://ENEMIGOS/alien.gd
+monster001eyes.png::CompressedTexture2D::376431634335522225::1686147372::1719631545::1::::<><>::
+::res://MAPA_GENERAL/::1719627983
+::res://MAPA_GENERAL/FONDO/::1719627177
+background1.png::CompressedTexture2D::4068422409160739641::1565811401::1719627177::1::::<><>::
+background2.png::CompressedTexture2D::2091171877378879419::1565819825::1719627177::1::::<><>::
+background3.png::CompressedTexture2D::778642083558994301::1565819048::1719627177::1::::<><>::
+background4a.png::CompressedTexture2D::128068850245464824::1565811451::1719627177::1::::<><>::
+background4b.png::CompressedTexture2D::1760007201467917888::1565818713::1719627177::1::::<><>::
+::res://MAPA_GENERAL/PLATAFORMA/::1719627984
+cavesofgallet.png::CompressedTexture2D::9204634792760431015::1520111332::1719627983::1::::<><>::
+cavesofgallet_tiles.png::CompressedTexture2D::7676204743187152539::1520111338::1719627983::1::::<><>::
+Dungeon Tile Set.png::CompressedTexture2D::1159167383607736105::1653080323::1719627983::1::::<><>::
+mainlev_build.png::CompressedTexture2D::1881731998385234891::1565811299::1719627984::1::::<><>::
+props1.png::CompressedTexture2D::8037849680992734618::1565812706::1719627984::1::::<><>::
+props2.png::CompressedTexture2D::7326170048609544341::1565811344::1719627984::1::::<><>::
+::res://NIVELES/::1719771164
+NIVEL1.tscn::PackedScene::230932291175045190::1719767494::0::1::::<><>::uid://qrrk18d6s32d::::res://MAPA_GENERAL/PLATAFORMA/Dungeon Tile Set.png<>uid://bx71k8aoeag2l::::res://MAPA_GENERAL/FONDO/background1.png<>uid://418kbmlg6mvj::::res://MAPA_GENERAL/FONDO/background2.png<>uid://ldgeej0ki6yr::::res://MAPA_GENERAL/FONDO/background3.png<>uid://b3bjmgr00xe3::::res://MAPA_GENERAL/FONDO/background4a.png<>uid://0n0rt5qtly4g::::res://ENEMIGOS/alien.tscn
+NIVEL2.tscn::PackedScene::9090501592300103753::1719769549::0::1::::<><>::uid://bx71k8aoeag2l::::res://MAPA_GENERAL/FONDO/background1.png<>uid://418kbmlg6mvj::::res://MAPA_GENERAL/FONDO/background2.png<>uid://ldgeej0ki6yr::::res://MAPA_GENERAL/FONDO/background3.png<>uid://b3bjmgr00xe3::::res://MAPA_GENERAL/FONDO/background4a.png<>uid://qrrk18d6s32d::::res://MAPA_GENERAL/PLATAFORMA/Dungeon Tile Set.png<>uid://0n0rt5qtly4g::::res://ENEMIGOS/alien.tscn
+NIVEL3.tscn::PackedScene::8462029672893437230::1719771164::0::1::::<><>::uid://bx71k8aoeag2l::::res://MAPA_GENERAL/FONDO/background1.png<>uid://418kbmlg6mvj::::res://MAPA_GENERAL/FONDO/background2.png<>uid://ldgeej0ki6yr::::res://MAPA_GENERAL/FONDO/background3.png<>uid://b3bjmgr00xe3::::res://MAPA_GENERAL/FONDO/background4a.png<>uid://qrrk18d6s32d::::res://MAPA_GENERAL/PLATAFORMA/Dungeon Tile Set.png<>uid://0n0rt5qtly4g::::res://ENEMIGOS/alien.tscn
