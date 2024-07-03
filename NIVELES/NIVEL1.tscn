@@ -357,18 +357,23 @@ terrain_set_0/terrain_0/color = Color(1, 0.156863, 0, 1)
 sources/8 = SubResource("TileSetAtlasSource_kh132")
 
 [node name="NIVEL 1" type="Node2D"]
+position = Vector2(368, 323)
+scale = Vector2(1.05, 1.677)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(352, 193)
 motion_scale = Vector2(0.1, 0.1)
 motion_mirroring = Vector2(672, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-scale = Vector2(0.7, 0.7)
+position = Vector2(715.5, 132)
+scale = Vector2(2.22813, 1.34167)
 texture = ExtResource("2_nkxec")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(352, 193)
 motion_scale = Vector2(0.2, 0.2)
 motion_mirroring = Vector2(672, 0)
 
@@ -377,19 +382,23 @@ scale = Vector2(0.7, 0.7)
 texture = ExtResource("3_ck2p1")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(352, 193)
 motion_scale = Vector2(0.3, 0.3)
 motion_mirroring = Vector2(672, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
-scale = Vector2(0.7, 0.7)
+position = Vector2(381, 127)
+scale = Vector2(1.525, 1.33333)
 texture = ExtResource("4_8ifji")
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(352, 193)
 motion_scale = Vector2(0.4, 0.4)
 motion_mirroring = Vector2(672, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
-scale = Vector2(0.7, 0.7)
+position = Vector2(378.5, 129)
+scale = Vector2(1.51979, 1.34167)
 texture = ExtResource("5_l0d0e")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -400,5 +409,5 @@ layer_0/tile_data = PackedInt32Array(720875, 524296, 7, 655339, 524296, 6, 58980
 [node name="Enemigos" type="Node2D" parent="."]
 
 [node name="Alien" parent="Enemigos" instance=ExtResource("6_omjvn")]
-position = Vector2(-108, 124)
-scale = Vector2(2, 2)
+position = Vector2(-107.619, 131.783)
+scale = Vector2(1.5, 1.5)

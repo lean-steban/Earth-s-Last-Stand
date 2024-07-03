@@ -140,8 +140,8 @@ script = ExtResource("1_yjdhf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_20lay")
 animation = &"Ataque"
-frame = 7
-frame_progress = 0.92083
+frame = 4
+frame_progress = 0.285191
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
