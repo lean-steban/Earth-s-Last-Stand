@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://cgogo022hy6ta"]
+[gd_scene load_steps=8 format=3 uid="uid://cgogo022hy6ta"]
 
+[ext_resource type="Script" path="res://NIVELES/pantalla_titulo.gd" id="1_50610"]
 [ext_resource type="PackedScene" uid="uid://c2ubfqed4rrd" path="res://NIVELES/menu_principal/parallax_background.tscn" id="1_nvacx"]
 [ext_resource type="Texture2D" uid="uid://tmoeliwtculw" path="res://NIVELES/menu_principal/titulo.jpg" id="2_fnnue"]
 [ext_resource type="Texture2D" uid="uid://bteuoya58h8me" path="res://NIVELES/menu_principal/jug_button_0.png" id="2_gvevm"]
@@ -15,6 +16,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
+script = ExtResource("1_50610")
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_nvacx")]
 
@@ -62,3 +64,6 @@ size_flags_horizontal = 4
 texture_normal = ExtResource("3_dxxki")
 texture_pressed = ExtResource("4_uqs22")
 stretch_mode = 3
+
+[connection signal="pressed" from="VBoxContainer2/VBoxButtons/Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="VBoxContainer2/VBoxButtons/Salir" to="." method="_on_salir_pressed"]

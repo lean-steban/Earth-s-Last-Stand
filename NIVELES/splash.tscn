@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3 uid="uid://2okho7p8frsw"]
+
+[ext_resource type="Script" path="res://NIVELES/splash.gd" id="1_2tqbm"]
+[ext_resource type="Texture2D" uid="uid://f6dlm4ihonwp" path="res://RECURSOS/logo-Endless.png" id="1_5ko52"]
+[ext_resource type="Texture2D" uid="uid://ci7xd5docbp50" path="res://RECURSOS/logo.jpg" id="2_numla"]
+
+[sub_resource type="Animation" id="Animation_ic4rj"]
+resource_name = "Endless"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Endless:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n8mt2"]
+_data = {
+"Endless": SubResource("Animation_ic4rj")
+}
+
+[sub_resource type="Animation" id="Animation_owy6i"]
+resource_name = "new_animation"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dreamriftstudios:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e852a"]
+_data = {
+"new_animation": SubResource("Animation_owy6i")
+}
+
+[node name="splash" type="Node2D"]
+script = ExtResource("1_2tqbm")
+
+[node name="Endless" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(591, 315)
+texture = ExtResource("1_5ko52")
+
+[node name="Dreamriftstudios" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(591, 315)
+scale = Vector2(1.21333, 1.12333)
+texture = ExtResource("2_numla")
+
+[node name="AnimationPlayerEndless" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_n8mt2")
+}
+
+[node name="AnimationPlayerDreamriftstudios" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_e852a")
+}
+
+[connection signal="animation_finished" from="AnimationPlayerEndless" to="." method="_on_animation_player_endless_animation_finished"]
+[connection signal="animation_finished" from="AnimationPlayerDreamriftstudios" to="." method="_on_animation_player_dreamriftstudios_animation_finished"]
