@@ -1,1 +1,9 @@
 res://NIVELES/NIVEL1.tscn
+res://NIVELES/NIVEL2.tscn
+res://NIVELES/NIVEL3.tscn
+res://ENEMIGOS/alien.tscn
+res://NIVELES/menu_principal/parallax_background.tscn
+res://PERSONAJES/per_principal.tscn
+res://NIVELES/pantalla_titulo.tscn
+res://NIVELES/splash.tscn
+res://PERSONAJES/PJ_princ/bullet.tscn

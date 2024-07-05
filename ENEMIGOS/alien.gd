@@ -2,12 +2,15 @@ extends CharacterBody2D
 
 const AlienCaminar = 10
 const Gravedad = 98
+
+@onready var area = $Area2D
+
 func _ready():
 	velocity.x = AlienCaminar
 	$AnimatedSprite2D.play("Caminar")
-	
+
 func _physics_process(delta):
-	velocity.y += Gravedad
+	velocity.y += Gravedad * delta
 	
 	if is_on_wall():
 		if !$AnimatedSprite2D.flip_h:
@@ -19,6 +22,5 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h = false
 	elif velocity.x > 0:
 		$AnimatedSprite2D.flip_h = true
-	
 	
 	move_and_slide()

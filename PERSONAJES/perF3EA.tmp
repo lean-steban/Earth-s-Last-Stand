@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://c3le3aw4djrbm"]
+
+[ext_resource type="Script" path="res://per_principal.gd" id="1_v2ald"]
+[ext_resource type="Texture2D" uid="uid://cb3psfs6tnbmp" path="res://PERSONAJES/PJ_princ/pixil-frame-0.png" id="2_84s0g"]
+[ext_resource type="Texture2D" uid="uid://ftbioacib1q4" path="res://PERSONAJES/PJ_princ/pixil-frame-1.png" id="3_epwkd"]
+[ext_resource type="PackedScene" uid="uid://dsljjyerlic7m" path="res://PERSONAJES/PJ_princ/bullet.tscn" id="4_5dbgq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jx1kh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_84s0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_epwkd")
+}],
+"loop": true,
+"name": &"caminar",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1o554"]
+size = Vector2(21.5, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wrnd7"]
+size = Vector2(20, 28)
+
+[node name="per_principal" type="CharacterBody2D"]
+script = ExtResource("1_v2ald")
+speed = null
+jump_velocity = null
+gravity = null
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(16, 18.5)
+scale = Vector2(1.33333, 1.54167)
+sprite_frames = SubResource("SpriteFrames_jx1kh")
+animation = &"caminar"
+frame = 1
+frame_progress = 0.728252
+speed_scale = 0.7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(13.25, 14.5)
+shape = SubResource("RectangleShape2D_1o554")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(14, 15)
+shape = SubResource("RectangleShape2D_wrnd7")
+
+[node name="bullet" parent="." instance=ExtResource("4_5dbgq")]
+position = Vector2(25, 10)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="bullet" to="." method="_on_bullet_area_entered"]
+[connection signal="body_entered" from="bullet" to="." method="_on_bullet_body_entered"]

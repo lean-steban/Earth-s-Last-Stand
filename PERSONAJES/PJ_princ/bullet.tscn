@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsljjyerlic7m"]
+
+[ext_resource type="Script" path="res://bullet.gd" id="1_2wqrb"]
+[ext_resource type="Texture2D" uid="uid://ddy1djp4f41o4" path="res://PERSONAJES/PJ_princ/balita.png" id="2_vgclc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xt3dt"]
+radius = 12.5
+
+[node name="bullet" type="Area2D"]
+script = ExtResource("1_2wqrb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8.5, 8.25)
+scale = Vector2(0.13, 0.115)
+texture = ExtResource("2_vgclc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, 8)
+scale = Vector2(0.24, 0.23)
+shape = SubResource("CircleShape2D_xt3dt")
