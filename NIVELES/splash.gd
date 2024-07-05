@@ -18,13 +18,7 @@ func _input(event):
 
 func _go_title_screen():
 	print("Cambiando a la escena del título")
-	var tree = get_tree()
-	if tree and menu_scene:
-		# Instanciar la escena del menú principal
-		var menu_instance = menu_scene.instance()
-		
-		# Cambiar la escena actual
-		tree.set_current_scene(menu_instance)
+	get_tree().change_scene_to_packed(menu_scene)
 
 func _on_animation_player_endless_animation_finished(anim_name):
 	print("Animación de Endless terminada: Mostrando logo de Dreamriftstudios")
