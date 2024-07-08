@@ -9,3 +9,5 @@ res://NIVELES/splash.tscn
 res://PERSONAJES/PJ_princ/bullet.tscn
 res://per_principal.gd
 res://bullet.gd
+res://NIVELES/playercamera.gd
+res://NIVELES/areapuerta.gd

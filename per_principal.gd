@@ -62,3 +62,12 @@ func shoot():
 	
 		
 	print("Posición del proyectil:", bullet.position, "Dirección del proyectil:", bullet.direction)
+
+
+func _on_areapuerta_body_entered(body):
+	if body.name == "per_principal":
+		load_next_level()
+
+func load_next_level():
+	var next_scene = load("res://NIVELES/NIVEL2.tscn")
+	get_tree().change_scene_to_packed(next_scene)
