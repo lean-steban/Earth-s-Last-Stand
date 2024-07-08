@@ -1,11 +1,10 @@
 [gd_scene load_steps=11 format=3 uid="uid://dj4ok101l5m5"]
 
+[ext_resource type="AudioStream" uid="uid://c2ossl6rel5hb" path="res://MUSICA/fondomu.mp3" id="1_02dw4"]
+[ext_resource type="Texture2D" uid="uid://ca3o3hqskpodk" path="res://MAPA_GENERAL/FONDO/title_backgroundv1.png" id="1_lm04w"]
 [ext_resource type="Texture2D" uid="uid://qrrk18d6s32d" path="res://MAPA_GENERAL/PLATAFORMA/Dungeon Tile Set.png" id="2_djyci"]
-[ext_resource type="Texture2D" uid="uid://bx71k8aoeag2l" path="res://MAPA_GENERAL/FONDO/background1.png" id="2_nkxec"]
-[ext_resource type="Texture2D" uid="uid://418kbmlg6mvj" path="res://MAPA_GENERAL/FONDO/background2.png" id="3_ck2p1"]
-[ext_resource type="Texture2D" uid="uid://ldgeej0ki6yr" path="res://MAPA_GENERAL/FONDO/background3.png" id="4_8ifji"]
-[ext_resource type="Texture2D" uid="uid://b3bjmgr00xe3" path="res://MAPA_GENERAL/FONDO/background4a.png" id="5_l0d0e"]
 [ext_resource type="PackedScene" uid="uid://0n0rt5qtly4g" path="res://ENEMIGOS/alien.tscn" id="6_omjvn"]
+[ext_resource type="Texture2D" uid="uid://hdw7lvun6jki" path="res://RECURSOS/spikes.png" id="6_qggui"]
 [ext_resource type="PackedScene" uid="uid://c3le3aw4djrbm" path="res://PERSONAJES/per_principal.tscn" id="7_apqna"]
 [ext_resource type="Script" path="res://NIVELES/playercamera.gd" id="8_0m6no"]
 
@@ -358,55 +357,25 @@ terrain_set_0/terrain_0/name = "PLATAFORMA 1"
 terrain_set_0/terrain_0/color = Color(1, 0.156863, 0, 1)
 sources/8 = SubResource("TileSetAtlasSource_kh132")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nc41i"]
+size = Vector2(308.987, 182.783)
+
 [node name="NIVEL 1" type="Node2D"]
 position = Vector2(368, 323)
 scale = Vector2(1.05, 1.677)
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_02dw4")
+volume_db = -12.085
+autoplay = true
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(354, -550)
-motion_scale = Vector2(0.1, 0.1)
-motion_mirroring = Vector2(672, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-modulate = Color(0.588235, 1, 1, 0.588235)
-position = Vector2(377, 872)
-scale = Vector2(1.5236, 1.34278)
-texture = ExtResource("2_nkxec")
-
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(354, -550)
-motion_scale = Vector2(0.2, 0.2)
-motion_mirroring = Vector2(672, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
-modulate = Color(0.588235, 1, 1, 0.588235)
-position = Vector2(378, 869)
-scale = Vector2(1.52558, 1.33078)
-texture = ExtResource("3_ck2p1")
-
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(354, -550)
-motion_scale = Vector2(0.3, 0.3)
-motion_mirroring = Vector2(672, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
-modulate = Color(0.588235, 1, 1, 0.588235)
-position = Vector2(372, 870)
-scale = Vector2(1.51447, 1.33773)
-texture = ExtResource("4_8ifji")
-
-[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(354, -550)
-motion_scale = Vector2(0.4, 0.4)
-motion_mirroring = Vector2(672, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
-modulate = Color(0.588235, 1, 1, 0.588235)
-position = Vector2(375, 871)
-scale = Vector2(1.51979, 1.34167)
-texture = ExtResource("5_l0d0e")
+[node name="backgroundt" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(5269.52, 44.7227)
+scale = Vector2(1.18785, 1.03847)
+texture = ExtResource("1_lm04w")
+region_enabled = true
+region_rect = Rect2(0, 0, 9600, 480)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(151.429, -0.596303)
@@ -420,39 +389,58 @@ layer_1/tile_data = PackedInt32Array(-327691, 131080, 12, -262155, 524296, 12, 6
 
 [node name="Enemigos" type="Node2D" parent="."]
 
-[node name="Alien" parent="Enemigos" instance=ExtResource("6_omjvn")]
+[node name="Alien" parent="Enemigos" groups=["Enemigos"] instance=ExtResource("6_omjvn")]
 position = Vector2(-59.0476, 73.9416)
 scale = Vector2(1.5, 1.5)
 
-[node name="Alien2" parent="Enemigos" instance=ExtResource("6_omjvn")]
-position = Vector2(1143.81, 91.8307)
+[node name="Alien2" parent="Enemigos" groups=["Enemigos"] instance=ExtResource("6_omjvn")]
+position = Vector2(977.143, 142.516)
 scale = Vector2(1.5, 1.5)
 
-[node name="Alien3" parent="Enemigos" instance=ExtResource("6_omjvn")]
-position = Vector2(1422.86, -13.715)
+[node name="Alien3" parent="Enemigos" groups=["Enemigos"] instance=ExtResource("6_omjvn")]
+position = Vector2(628.572, -47.1079)
 scale = Vector2(1.5, 1.5)
 
-[node name="Alien4" parent="Enemigos" instance=ExtResource("6_omjvn")]
-position = Vector2(763.81, 141.324)
+[node name="Alien4" parent="Enemigos" groups=["Enemigos"] instance=ExtResource("6_omjvn")]
+position = Vector2(717.143, 145.498)
 scale = Vector2(1.5, 1.5)
 
-[node name="Alien5" parent="Enemigos" instance=ExtResource("6_omjvn")]
-position = Vector2(538.095, -85.2713)
+[node name="Alien5" parent="Enemigos" groups=["Enemigos"] instance=ExtResource("6_omjvn")]
+position = Vector2(1265.71, 38.7597)
 scale = Vector2(1.5, 1.5)
 
-[node name="Alien6" parent="Enemigos" instance=ExtResource("6_omjvn")]
-position = Vector2(141.905, -29.8151)
+[node name="Alien6" parent="Enemigos" groups=["Enemigos"] instance=ExtResource("6_omjvn")]
+position = Vector2(1429.52, -12.5224)
 scale = Vector2(1.5, 1.5)
 
-[node name="Alien7" parent="Enemigos" instance=ExtResource("6_omjvn")]
-position = Vector2(337.143, -66.7859)
+[node name="Alien7" parent="Enemigos" groups=["Enemigos"] instance=ExtResource("6_omjvn")]
+position = Vector2(856.191, 143.113)
 scale = Vector2(1.5, 1.5)
 
-[node name="per_principal" parent="." instance=ExtResource("7_apqna")]
+[node name="Node2D" type="Node2D" parent="."]
 position = Vector2(-262.857, 54.8599)
+
+[node name="per_principal" parent="Node2D" instance=ExtResource("7_apqna")]
+position = Vector2(4.76173, 1.78887)
 input_pickable = true
 
-[node name="playercamera" type="Camera2D" parent="per_principal"]
-position = Vector2(13.3333, 17.2928)
+[node name="playercamera" type="Camera2D" parent="Node2D/per_principal"]
+position = Vector2(13, 17.293)
 zoom = Vector2(3, 1)
 script = ExtResource("8_0m6no")
+
+[node name="Espinas" type="Node2D" parent="."]
+position = Vector2(-3.05176e-05, -3.05176e-05)
+
+[node name="Sprite2D" type="Sprite2D" parent="Espinas"]
+position = Vector2(438.095, 45.468)
+scale = Vector2(0.157196, 0.0759255)
+texture = ExtResource("6_qggui")
+
+[node name="AreaEspina" type="Area2D" parent="Espinas/Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Espinas/Sprite2D/AreaEspina"]
+position = Vector2(-3.03076, -12.6697)
+shape = SubResource("RectangleShape2D_nc41i")
+
+[connection signal="body_entered" from="Espinas/Sprite2D/AreaEspina" to="Node2D/per_principal" method="_on_area_espina_body_entered"]
