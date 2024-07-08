@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720192793
-bullet.gd::GDScript::-1::1720164486::0::1::::<>Area2D<>::
+::res://::1720460636
+bullet.gd::GDScript::-1::1720460066::0::1::::<>Area2D<>::
 Health_dashboard.gd::GDScript::-1::1720106474::0::1::::<>CanvasLayer<>::
 icon.svg::CompressedTexture2D::754048053382022696::1720020495::1720022792::1::::<><>::
-per_principal.gd::GDScript::-1::1720167700::0::1::::<>CharacterBody2D<>::
+per_principal.gd::GDScript::-1::1720460066::0::1::::<>CharacterBody2D<>::
 ::res://addons/::1720164875
 ::res://addons/scene_manager/::1720164875
 plugin.cfg::TextFile::-1::1720164875::0::1::::<><>::
@@ -24,9 +24,9 @@ test_scene.tscn::PackedScene::5828787299293032206::1720164875::0::1::::<><>::res
 ::res://addons/scene_manager/test/custom_loading_screen/::1720164875
 loading_screen.gd::GDScript::-1::1720164875::0::1::::<>LoadingScreen<>::
 loading_screen.tscn::PackedScene::3823417931195193664::1720164875::0::1::::<><>::res://addons/scene_manager/test/custom_loading_screen/loading_screen.gd
-::res://ENEMIGOS/::1720167840
+::res://ENEMIGOS/::1720460223
 alien.gd::GDScript::-1::1720157495::0::1::::<>CharacterBody2D<>::
-alien.tscn::PackedScene::1783107330109734984::1720167840::0::1::::<><>::uid://fml1k1c88bgj::::res://ENEMIGOS/monster001eyes.png<>res://ENEMIGOS/alien.gd
+alien.tscn::PackedScene::1783107330109734984::1720460223::0::1::::<><>::uid://fml1k1c88bgj::::res://ENEMIGOS/monster001eyes.png<>res://ENEMIGOS/alien.gd
 monster001eyes.png::CompressedTexture2D::376431634335522225::1720020495::1720020495::1::::<><>::
 ::res://MAPA_GENERAL/::1720020495
 ::res://MAPA_GENERAL/FONDO/::1720046453
@@ -43,34 +43,38 @@ Dungeon Tile Set.png::CompressedTexture2D::1159167383607736105::1720020495::1720
 mainlev_build.png::CompressedTexture2D::1881731998385234891::1720020495::1720020495::1::::<><>::
 props1.png::CompressedTexture2D::8037849680992734618::1720020495::1720020495::1::::<><>::
 props2.png::CompressedTexture2D::7326170048609544341::1720020495::1720020495::1::::<><>::
-::res://NIVELES/::1720167841
-NIVEL1.tscn::PackedScene::230932291175045190::1720167840::0::1::::<><>::uid://qrrk18d6s32d::::res://MAPA_GENERAL/PLATAFORMA/Dungeon Tile Set.png<>uid://bx71k8aoeag2l::::res://MAPA_GENERAL/FONDO/background1.png<>uid://418kbmlg6mvj::::res://MAPA_GENERAL/FONDO/background2.png<>uid://ldgeej0ki6yr::::res://MAPA_GENERAL/FONDO/background3.png<>uid://b3bjmgr00xe3::::res://MAPA_GENERAL/FONDO/background4a.png<>uid://0n0rt5qtly4g::::res://ENEMIGOS/alien.tscn<>uid://c3le3aw4djrbm::::res://PERSONAJES/per_principal.tscn<>res://NIVELES/playercamera.gd
-NIVEL2.tscn::PackedScene::9090501592300103753::1720167840::0::1::::<><>::uid://bx71k8aoeag2l::::res://MAPA_GENERAL/FONDO/background1.png<>uid://418kbmlg6mvj::::res://MAPA_GENERAL/FONDO/background2.png<>uid://ldgeej0ki6yr::::res://MAPA_GENERAL/FONDO/background3.png<>uid://b3bjmgr00xe3::::res://MAPA_GENERAL/FONDO/background4a.png<>uid://qrrk18d6s32d::::res://MAPA_GENERAL/PLATAFORMA/Dungeon Tile Set.png<>uid://0n0rt5qtly4g::::res://ENEMIGOS/alien.tscn
-NIVEL3.tscn::PackedScene::8462029672893437230::1720167840::0::1::::<><>::uid://bx71k8aoeag2l::::res://MAPA_GENERAL/FONDO/background1.png<>uid://418kbmlg6mvj::::res://MAPA_GENERAL/FONDO/background2.png<>uid://ldgeej0ki6yr::::res://MAPA_GENERAL/FONDO/background3.png<>uid://b3bjmgr00xe3::::res://MAPA_GENERAL/FONDO/background4a.png<>uid://qrrk18d6s32d::::res://MAPA_GENERAL/PLATAFORMA/Dungeon Tile Set.png<>uid://0n0rt5qtly4g::::res://ENEMIGOS/alien.tscn
-pantalla_titulo.gd::GDScript::-1::1720166041::0::1::::<>Control<>::
-pantalla_titulo.tscn::PackedScene::5223266376873064018::1720167841::0::1::::<><>::res://NIVELES/pantalla_titulo.gd<>uid://c2ubfqed4rrd::::res://NIVELES/menu_principal/parallax_background.tscn<>uid://tmoeliwtculw::::res://NIVELES/menu_principal/titulo.jpg<>uid://bteuoya58h8me::::res://NIVELES/menu_principal/jug_button_0.png<>uid://brtd1mmg7qk4v::::res://NIVELES/menu_principal/sal_button_0.png<>uid://ch5tj8uh54i26::::res://NIVELES/menu_principal/jug_button_1.png<>uid://dvvhn2m7cn84b::::res://NIVELES/menu_principal/sal_button_1.png
+::res://MUSICA/::1720460639
+fondomu.mp3::AudioStreamMP3::6697967110754001119::1720460602::1720460642::1::::<><>::
+::res://NIVELES/::1720460223
+ColisionEspina.gd::GDScript::-1::1720304289::0::1::::<>Area2D<>::
+NIVEL1.tscn::PackedScene::230932291175045190::1720460223::0::1::::<><>::uid://ca3o3hqskpodk::::res://MAPA_GENERAL/FONDO/title_backgroundv1.png<>uid://qrrk18d6s32d::::res://MAPA_GENERAL/PLATAFORMA/Dungeon Tile Set.png<>uid://0n0rt5qtly4g::::res://ENEMIGOS/alien.tscn<>uid://dsljjyerlic7m::::res://PERSONAJES/PJ_princ/bullet.tscn<>uid://hdw7lvun6jki::::res://RECURSOS/spikes.png<>uid://c3le3aw4djrbm::::res://PERSONAJES/per_principal.tscn<>res://NIVELES/playercamera.gd
+NIVEL2.tscn::PackedScene::9090501592300103753::1720460223::0::1::::<><>::uid://bx71k8aoeag2l::::res://MAPA_GENERAL/FONDO/background1.png<>uid://418kbmlg6mvj::::res://MAPA_GENERAL/FONDO/background2.png<>uid://ldgeej0ki6yr::::res://MAPA_GENERAL/FONDO/background3.png<>uid://b3bjmgr00xe3::::res://MAPA_GENERAL/FONDO/background4a.png<>uid://qrrk18d6s32d::::res://MAPA_GENERAL/PLATAFORMA/Dungeon Tile Set.png<>uid://0n0rt5qtly4g::::res://ENEMIGOS/alien.tscn
+NIVEL3.tscn::PackedScene::8462029672893437230::1720460223::0::1::::<><>::uid://bx71k8aoeag2l::::res://MAPA_GENERAL/FONDO/background1.png<>uid://418kbmlg6mvj::::res://MAPA_GENERAL/FONDO/background2.png<>uid://ldgeej0ki6yr::::res://MAPA_GENERAL/FONDO/background3.png<>uid://b3bjmgr00xe3::::res://MAPA_GENERAL/FONDO/background4a.png<>uid://qrrk18d6s32d::::res://MAPA_GENERAL/PLATAFORMA/Dungeon Tile Set.png<>uid://0n0rt5qtly4g::::res://ENEMIGOS/alien.tscn
+pantalla_titulo.gd::GDScript::-1::1720193044::0::1::::<>Control<>::
+pantalla_titulo.tscn::PackedScene::5223266376873064018::1720460223::0::1::::<><>::res://NIVELES/pantalla_titulo.gd<>uid://c2ubfqed4rrd::::res://NIVELES/menu_principal/parallax_background.tscn<>uid://tmoeliwtculw::::res://NIVELES/menu_principal/titulo.jpg<>uid://bteuoya58h8me::::res://NIVELES/menu_principal/jug_button_0.png<>uid://brtd1mmg7qk4v::::res://NIVELES/menu_principal/sal_button_0.png<>uid://ch5tj8uh54i26::::res://NIVELES/menu_principal/jug_button_1.png<>uid://dvvhn2m7cn84b::::res://NIVELES/menu_principal/sal_button_1.png
 playercamera.gd::GDScript::-1::1720145272::0::1::::<>Camera2D<>::
-splash.gd::GDScript::-1::1720167654::0::1::::<>Node2D<>::
-splash.tscn::PackedScene::1924620522755200726::1720167841::0::1::::<><>::res://NIVELES/splash.gd<>uid://f6dlm4ihonwp::::res://RECURSOS/logo-Endless.png<>uid://ci7xd5docbp50::::res://RECURSOS/logo.jpg
-::res://NIVELES/menu_principal/::1720167840
+splash.gd::GDScript::-1::1720192956::0::1::::<>Node2D<>::
+splash.tscn::PackedScene::1924620522755200726::1720460223::0::1::::<><>::res://NIVELES/splash.gd<>uid://f6dlm4ihonwp::::res://RECURSOS/logo-Endless.png<>uid://ci7xd5docbp50::::res://RECURSOS/logo.jpg
+::res://NIVELES/menu_principal/::1720460223
 jug_button_0.png::CompressedTexture2D::3729506826769832232::1720046453::1720046453::1::::<><>::
 jug_button_1.png::CompressedTexture2D::5327266065007860093::1720046453::1720046453::1::::<><>::
 parallax_background.gd::GDScript::-1::1720046453::0::1::::<>ParallaxBackground<>::
-parallax_background.tscn::PackedScene::197332299805445025::1720167840::0::1::::<><>::uid://ca3o3hqskpodk::::res://MAPA_GENERAL/FONDO/title_backgroundv1.png<>res://NIVELES/menu_principal/parallax_background.gd
+parallax_background.tscn::PackedScene::197332299805445025::1720460223::0::1::::<><>::uid://ca3o3hqskpodk::::res://MAPA_GENERAL/FONDO/title_backgroundv1.png<>res://NIVELES/menu_principal/parallax_background.gd
 sal_button_0.png::CompressedTexture2D::3619083433620485463::1720046453::1720046453::1::::<><>::
 sal_button_1.png::CompressedTexture2D::8677029372708630631::1720046453::1720046453::1::::<><>::
 titulo.jpg::CompressedTexture2D::1359218334386041436::1720046453::1720046453::1::::<><>::
-::res://PERSONAJES/::1720167840
-per_principal.tscn::PackedScene::6761130050053876234::1720167840::0::1::::<><>::res://per_principal.gd<>uid://cb3psfs6tnbmp::::res://PERSONAJES/PJ_princ/pixil-frame-0.png<>uid://ftbioacib1q4::::res://PERSONAJES/PJ_princ/pixil-frame-1.png<>uid://dsljjyerlic7m::::res://PERSONAJES/PJ_princ/bullet.tscn
-::res://PERSONAJES/PJ_princ/::1720167841
+::res://PERSONAJES/::1720460223
+per_principal.tscn::PackedScene::6761130050053876234::1720460223::0::1::::<><>::res://per_principal.gd<>uid://cb3psfs6tnbmp::::res://PERSONAJES/PJ_princ/pixil-frame-0.png<>uid://ftbioacib1q4::::res://PERSONAJES/PJ_princ/pixil-frame-1.png<>uid://dsljjyerlic7m::::res://PERSONAJES/PJ_princ/bullet.tscn
+::res://PERSONAJES/PJ_princ/::1720460223
 balita.png::CompressedTexture2D::7420958144492174585::1720159377::1720159466::1::::<><>::
-bullet.tscn::PackedScene::8445933184465626724::1720167841::0::1::::<><>::res://bullet.gd<>uid://ddy1djp4f41o4::::res://PERSONAJES/PJ_princ/balita.png
+bullet.tscn::PackedScene::8445933184465626724::1720460223::0::1::::<><>::res://bullet.gd<>uid://ddy1djp4f41o4::::res://PERSONAJES/PJ_princ/balita.png
 pixil-frame-0.png::CompressedTexture2D::4901775979177324579::1720090564::1720103203::1::::<><>::
 pixil-frame-1.png::CompressedTexture2D::390243134289836781::1720090564::1720103210::1::::<><>::
-::res://RECURSOS/::1720158419
+::res://RECURSOS/::1720305400
 health_dashboard.tscn::PackedScene::3216592789767411944::1720158419::0::1::::<><>::res://Health_dashboard.gd<>uid://dmsg1fgigxyas::::res://RECURSOS/health/1.png<>uid://dtdey2i6lgif1::::res://RECURSOS/health/3.png<>uid://cb8qg5k72dceo::::res://RECURSOS/health/4.png<>uid://b2mc5l3uue1t2::::res://RECURSOS/health/2.png
 logo-Endless.png::CompressedTexture2D::415142398730201807::1718609739::1720106657::1::::<><>::
 logo.jpg::CompressedTexture2D::5401815633809461241::1720104419::1720104540::1::::<><>::
+spikes.png::CompressedTexture2D::498908569099279240::1720305303::1720305400::1::::<><>::
 ::res://RECURSOS/font_sailor-stitch/::1720046453
 OOSFC-License-EULA.txt::TextFile::-1::1720046453::0::1::::<><>::
 OOSFC-Sailor-Stitch-2013-09-19-Flyer.png::CompressedTexture2D::2776683513235137554::1720046453::1720046453::1::::<><>::

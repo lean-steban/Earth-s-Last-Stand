@@ -9,7 +9,7 @@ script = ExtResource("1_4xelk")
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_mirroring = Vector2(9600, 4800)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+[node name="backgroundt" type="Sprite2D" parent="ParallaxLayer"]
 texture_repeat = 2
 position = Vector2(5769, 323.75)
 scale = Vector2(1.20625, 1.34896)

@@ -7,6 +7,5 @@ res://PERSONAJES/per_principal.tscn
 res://NIVELES/pantalla_titulo.tscn
 res://NIVELES/splash.tscn
 res://PERSONAJES/PJ_princ/bullet.tscn
-res://NIVELES/splash.gd
-res://NIVELES/pantalla_titulo.gd
 res://per_principal.gd
+res://bullet.gd
